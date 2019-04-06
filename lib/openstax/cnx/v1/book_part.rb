@@ -44,5 +44,11 @@ module OpenStax::Cnx::V1
       @is_chapter ||= parts.none? { |part| part.is_a?(self.class) }
     end
 
+    def pages
+      parts.map do |part|
+        part.is_a?(Page) ? part : part.pages
+      end.flatten
+    end
+
   end
 end
