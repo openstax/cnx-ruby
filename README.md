@@ -1,5 +1,7 @@
 # OpenStax::Cnx
 
+[![Build Status](https://travis-ci.org/openstax/cnx-ruby.svg?branch=master)](https://travis-ci.org/openstax/cnx-ruby)
+
 This gem provides a Ruby interface to OpenStax book content.
 
 ## Installation
@@ -36,7 +38,7 @@ Book
     etc...
 ```
 
-Some OpenStax books organized chapters into units.  The units are BookParts like the chapters are:
+Some OpenStax books organize chapters into units.  The units are BookParts like the chapters are:
 
 ```
 Book
