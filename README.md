@@ -1,8 +1,6 @@
-# OpenstaxCnx
+# OpenStax::Cnx
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/openstax_cnx`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+This gem provides a Ruby interface to OpenStax book content.
 
 ## Installation
 
@@ -22,7 +20,106 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Books are made up of BookParts and Pages.  Every Book as a single top-level "root" BookPart.  BookParts can contain other BookParts and Pages.  Many OpenStax books are organized as pages within chapters.  For these books the Ruby objects hierarchy looks like:
+
+```
+Book
+  BookPart (the "root")
+    Page (the "Preface")
+    BookPart (Chapter 1)
+      Page (Introduction)
+      Page (Section 1.1)
+      etc...
+    BookPart (Chapter 2)
+      Page (Introduction)
+      etc...
+    etc...
+```
+
+Some OpenStax books organized chapters into units.  The units are BookParts like the chapters are:
+
+```
+Book
+  BookPart (the "root")
+    Page (the "Preface")
+    BookPart (Unit 1)
+      Page (Unit Introduction)
+      BookPart (Chapter 1)
+        Page (Introduction)
+        Page (Section 1.1)
+        etc...
+      BookPart (Chapter 2)
+        Page (Introduction)
+        etc...
+      etc...
+    BookPart (Unit 2)
+      etc ...
+```
+
+This gem gives you Ruby objects to navigate this hierarchy and access the metadata and content at each level.  You start by creating a `Book` object given that book's UUID.
+
+```ruby
+book = OpenStax::Cnx::V1.book(id: "031da8d3-b525-429c-80cf-6c8ed997733a")
+```
+
+Books have some metadata you can read out:
+
+```ruby
+book.title # => "College Physics"
+book.baked # => "2019-03-20T14:24:26.164476-05:00"
+book.url   # => "https://archive.cnx.org/contents/031da8d3-b525-429c-80cf-6c8ed997733a"
+```
+
+To dig deeper, get the `root_book_part` and then is `parts`
+
+```ruby
+book.root_book_part.is_root # => true
+book.root_book_part.parts.count # => 40
+book.root_book_part.parts.first.class # => OpenStax::Cnx::V1::Page
+book.root_book_part.parts.first.title # => "Preface"
+book.root_book_part.parts[2].class # => OpenStax::Cnx::V1::BookPart
+book.root_book_part.parts[2].title # => "Kinematics"
+book.root_book_part.parts[2].is_chapter? # => true
+book.root_book_part.parts[2].parts.count # => 13
+book.root_book_part.parts[2].parts[6].class # => OpenStax::Cnx::V1::Page
+book.root_book_part.parts[2].parts[6].title # => "Problem-Solving Basics for One-Dimensional Kinematics"
+book.root_book_part.parts[2].parts[6].baked_book_location # => ["2", "6"]
+book.root_book_part.parts[2].parts[6].parsed_title # => {:text=>"Problem-Solving Basics for One-Dimensional Kinematics", :book_location=>["2", "6"]}
+```
+
+Note that a BookPart's parts array can contain both Pages and BookParts.  The baked book location is the section number, e.g. above we see section 2.6.
+
+You can run the above commands using the `bin/console` command in the gem directory.
+
+### Configuration
+
+You can override default gem configurations with the following:
+
+```ruby
+OpenStax::Cnx::V1.configure do |config|
+  # where to get the book content
+  config.archive_url_base = "https://someurl.com" # default is "https://archive.cnx.org"
+  # whether to ignore the book version history
+  config.ignore_history = false # default is true
+  # a logger
+  config.logger = Rails.logger # default is a null logger
+end
+```
+
+You can temporarily override the Archive URL with:
+
+```ruby
+OpenStax::Cnx::V1.with_archive_url("https://archive-staging.cnx.org") do
+  # your code here, will see the archive-staging url
+end
+# the original archive URL will be reset by this point
+```
+
+This is useful in tests where the content may not be on the production system.
+
+### What is `V1`?
+
+The versions in this gem (e.g. the `V1` in `OpenStax::Cnx::V1::Book`) are not versions of the CNX API, but rather just different ways of building models to access the CNX API.  We made a `V1` so that we could wildly change our mind later and add a `V2` without impact `V1` clients.
 
 ## Development
 
