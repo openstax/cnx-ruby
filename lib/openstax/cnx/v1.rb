@@ -8,6 +8,9 @@ require_relative './v1/http_error'
 
 require_relative './v1/book'
 require_relative './v1/book_part'
+require_relative './v1/element'
+require_relative './v1/figure'
+require_relative './v1/paragraph'
 require_relative './v1/page'
 require_relative './v1/baked'
 

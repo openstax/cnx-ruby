@@ -1,7 +1,7 @@
 module OpenStax::Cnx::V1
   class Book
 
-    def initialize(id: nil, hash: nil, title: nil, tree: nil, root_book_part: nil)
+    def initialize(id:, hash: nil, title: nil, tree: nil, root_book_part: nil)
       @id             = id
       @hash           = hash
       @title          = title

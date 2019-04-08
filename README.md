@@ -70,6 +70,12 @@ book.baked # => "2019-03-20T14:24:26.164476-05:00"
 book.url   # => "https://archive.cnx.org/contents/031da8d3-b525-429c-80cf-6c8ed997733a"
 ```
 
+To get all pages in a book:
+
+```ruby
+book.root_book_part.pages.count   # => 460
+```
+
 To dig deeper, get the `root_book_part` and then is `parts`
 
 ```ruby
