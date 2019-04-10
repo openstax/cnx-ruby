@@ -161,7 +161,40 @@ module OpenStax::Cnx::V1
       @tags.values
     end
 
+    # Pass the
+    #
+    #   e.g.,
+    #     element classes = [
+    #       OpenStax::Cnx::V1::Figure,
+    #       OpenStax::Cnx::V1::Paragraph
+    #     ]
+    #
+    # you want to retrieve with the page
+    def elements(element_classes:)
+      # This join is important to OR together all the xpaths in order to determine
+      # the matched element's order inside the page. Xpath does this for us.
+      match_all_elements = element_classes.map(&:matcher).join(' | ')
+
+      working_element_index = []
+
+      # Match on all the elements. Create Element objects with the matching xpath node.
+      content_dom.xpath(match_all_elements).each do | xpath_element |
+        element_class = element_classes.detect do | elem_class |
+          elem_class.matches?(xpath_element)
+        end
+
+        element = element_class.new(node: xpath_element)
+        working_element_index << element if element
+      end
+
+      working_element_index
+    end
+
     protected
+
+    def content_dom
+      @content_dom ||= Nokogiri::HTML(content)
+    end
 
     def url_for(path)
       book.nil? ? OpenStax::Cnx::V1.archive_url_for(path) : "#{book.canonical_url}:#{path}"
