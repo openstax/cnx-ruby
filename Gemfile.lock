@@ -2,6 +2,7 @@ PATH
   remote: .
   specs:
     openstax_cnx (0.1.0)
+      addressable
       nokogiri
 
 GEM
@@ -16,7 +17,7 @@ GEM
     dotenv (2.7.2)
     hashdiff (0.3.8)
     mini_portile2 (2.4.0)
-    nokogiri (1.10.2)
+    nokogiri (1.10.3)
       mini_portile2 (~> 2.4.0)
     public_suffix (3.0.3)
     rake (10.5.0)
