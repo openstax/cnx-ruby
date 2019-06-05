@@ -4,6 +4,7 @@ module OpenStax::Cnx::V1
 
     MATCH_FIGURE_CAPTION = ".//*[contains(@class, 'os-caption')]"
     MATCH_FIGURE_ALT_TEXT = './/*[@data-alt]'
+    MATCH_FIGURE_ELEM = './/figure'
 
     def initialize(node:)
       super
@@ -11,6 +12,10 @@ module OpenStax::Cnx::V1
 
     def caption
       node.xpath(MATCH_FIGURE_CAPTION).first.try(:text)
+    end
+
+    def id
+      node.xpath(MATCH_FIGURE_ELEM).first.attr("id")
     end
 
     def alt_text

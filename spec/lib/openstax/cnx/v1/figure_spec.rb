@@ -49,6 +49,12 @@ RSpec.describe OpenStax::Cnx::V1::Figure do
     end
   end
 
+  describe "#id" do
+    it "finds the figure id" do
+      expect(figure.id).to eq 'import-auto-id2688158'
+    end
+  end
+
   describe "#alt_text" do
     it "finds the figure alt_text" do
       expect(figure.alt_text).to include 'Andromeda'
