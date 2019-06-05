@@ -10,6 +10,10 @@ module OpenStax::Cnx::V1
       node.text
     end
 
+    def id
+      node.attr('id').value
+    end
+
     def self.matcher
       MATCH_PARAGRAPH
     end

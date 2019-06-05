@@ -3,17 +3,17 @@ require 'spec_helper'
 RSpec.describe OpenStax::Cnx::V1::Paragraph do
 
   let(:html) do
-    <<-FIGURE
+    <<-PARAGRAPH
     <html>
       <p id="import-auto-id2747641">What is your first reaction when you hear the word “physics”? Did you imagine working through difficult equations or memorizing formulas that seem to have no real use in life outside the physics classroom? Many people come to the subject of physics with a bit of fear. But as you begin your exploration of this broad-ranging subject, you may soon come to realize that physics plays a much larger role in your life than you first thought, no matter your life goals or career choice.
       </p>
     </html>
-    FIGURE
+    PARAGRAPH
   end
 
   let(:content_dom) { Nokogiri::HTML(html) }
   let(:paragraph_match) { content_dom.xpath(described_class.matcher) }
-  let(:figure) { described_class.new(node: paragraph_match) }
+  let(:paragraph) { described_class.new(node: paragraph_match) }
 
   describe ".matcher" do
     it "finds the paragraph" do
@@ -34,6 +34,12 @@ RSpec.describe OpenStax::Cnx::V1::Paragraph do
   describe "#text" do
     it "finds the paragraph text" do
       expect(paragraph_match.text).to include 'subject of physics'
+    end
+  end
+
+  describe "#id" do
+    it "finds the paragraph id" do
+      expect(paragraph.id).to eq 'import-auto-id2747641'
     end
   end
 end
