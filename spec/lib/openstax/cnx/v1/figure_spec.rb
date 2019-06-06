@@ -24,7 +24,7 @@ RSpec.describe OpenStax::Cnx::V1::Figure do
   end
 
   let(:content_dom) { Nokogiri::HTML(html) }
-  let(:figure_match) { content_dom.xpath(described_class.matcher) }
+  let(:figure_match) { content_dom.xpath(described_class.matcher).first }
   let(:figure) { described_class.new(node: figure_match) }
 
   describe ".matcher" do
@@ -35,11 +35,11 @@ RSpec.describe OpenStax::Cnx::V1::Figure do
 
   describe ".matches?" do
     it "finds the figure" do
-      expect(described_class.matches?(figure_match.first)).to be_truthy
+      expect(described_class.matches?(figure_match)).to be_truthy
     end
 
     it "should not find a paragraph in the figure node" do
-      expect(OpenStax::Cnx::V1::Paragraph.matches?(figure_match.first)).to_not be_truthy
+      expect(OpenStax::Cnx::V1::Paragraph.matches?(figure_match)).to_not be_truthy
     end
   end
 

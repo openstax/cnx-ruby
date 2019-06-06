@@ -11,7 +11,7 @@ module OpenStax::Cnx::V1
     end
 
     def id
-      node.attr('id').value
+      node.attr('id')
     end
 
     def self.matcher
