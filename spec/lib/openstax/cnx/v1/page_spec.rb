@@ -174,6 +174,28 @@ RSpec.describe OpenStax::Cnx::V1::Page, type: :external, vcr: VCR_OPTS do
     end
   end
 
+  context 'is a preface page' do
+    it 'identifies a preface' do
+      page = OpenStax::Cnx::V1::Page.new(
+        id: '7c42370b-c3ad-48ac-9620-d15367b882c6@19',
+        url: 'https://archive.cnx.org/contents/14fb4ad7-39a1-4eee-ab6e-3ef2482e3e22@15.1:7c42370b-c3ad-48ac-9620-d15367b882c6@19.json'
+      )
+      expect(page.preface?).to be_truthy
+      expect(page.index?).to be_falsey
+    end
+  end
+
+  context 'is a index page' do
+    it 'identifies a index' do
+      page = OpenStax::Cnx::V1::Page.new(
+        id: '808e7285-11d0-51fe-94fb-1747bab95c65@15.1',
+        url: 'https://archive.cnx.org/contents/14fb4ad7-39a1-4eee-ab6e-3ef2482e3e22@15.1:808e7285-11d0-51fe-94fb-1747bab95c65@15.1.json'
+      )
+      expect(page.index?).to be_truthy
+      expect(page.preface?).to be_falsey
+    end
+  end
+
   context 'parsing html titles' do
     it 'parses parts' do
       page = OpenStax::Cnx::V1::Page.new(

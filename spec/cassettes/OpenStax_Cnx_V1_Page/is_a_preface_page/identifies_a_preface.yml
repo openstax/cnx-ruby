@@ -1,0 +1,507 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://archive.cnx.org/contents/14fb4ad7-39a1-4eee-ab6e-3ef2482e3e22@15.1:7c42370b-c3ad-48ac-9620-d15367b882c6@19.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - text/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Headers:
+      - origin,dnt,accept-encoding,accept-language,keep-alive,user-agent,x-requested-with,if-modified-since,cache-control,content-type
+      Access-Control-Allow-Methods:
+      - GET, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - max-age=31536000, public
+      Content-Type:
+      - application/json
+      Date:
+      - Mon, 19 Aug 2019 12:18:04 GMT
+      Etag:
+      - '"zDMxuabc1PlWB0aOV0pl6g"'
+      Expires:
+      - Tue, 18 Aug 2020 12:18:04 GMT
+      Link:
+      - <https://cnx.org/contents/14fb4ad7-39a1-4eee-ab6e-3ef2482e3e22:7c42370b-c3ad-48ac-9620-d15367b882c6/Preface>
+        ;rel="Canonical"
+      Server:
+      - waitress
+      X-Varnish-Status:
+      - cacheable - Cache-Control in backend response
+      X-Varnish-Backend:
+      - prod07_archive2
+      X-Varnish-Ttl:
+      - '31536000.000'
+      X-Varnish:
+      - 1891948 1485958
+      Age:
+      - '112521'
+      Via:
+      - 1.1 varnish-v4
+      X-Varnish-Cache:
+      - HIT
+      Accept-Ranges:
+      - bytes
+      Transfer-Encoding:
+      - chunked
+      Strict-Transport-Security:
+      - max-age=16000000
+    body:
+      encoding: ASCII-8BIT
+      string: '{"googleAnalytics": ["UA-30227798-5"], "version": "19", "submitlog":
+        "removed bullets from list", "abstract": "<div xmlns=\"http://www.w3.org/1999/xhtml\"
+        xmlns:c=\"http://cnx.rice.edu/cnxml\" xmlns:md=\"http://cnx.rice.edu/mdml\"
+        xmlns:qml=\"http://cnx.rice.edu/qml/1.0\" xmlns:mod=\"http://cnx.rice.edu/#moduleIds\"
+        xmlns:bib=\"http://bibtexml.sf.net/\" xmlns:data=\"http://www.w3.org/TR/html5/dom.html#custom-data-attribute\"
+        data-cnxml-to-html-ver=\"1.3.2\">Human Anatomy and Physiology is designed
+        for the two-semester anatomy and physiology course taken by life science and
+        allied health students.  The textbook follows the scope and sequence of most
+        Human Anatomy and Physiology courses, and its coverage and organization were
+        informed by hundreds of instructors who teach the course.  Instructors can
+        customize the book, adapting it to the approach that works best in their classroom.  \nThe
+        artwork for this textbook is aimed focusing student learning through a powerful
+        blend of traditional depictions and instructional innovations.   Color is
+        used sparingly, to emphasize the most important aspects of any given illustration.  Significant
+        use of micrographs from the University of Michigan complement the illustrations,
+        and provide the students with a meaningful alternate depiction of each concept.  Finally,
+        enrichment elements provide relevance and deeper context for students, particularly
+        in the areas of health, disease, and information relevant to their intended
+        careers.</div>", "revised": "2019-02-07T22:07:05Z", "printStyle": null, "roles":
+        null, "keywords": ["water balance", "vertebrae", "vascular system", "urine",
+        "urinary system", "tissue", "thorax", "thoracic cage", "stomach", "skull",
+        "skin", "skeleton", "skeletal system", "sensory perception", "respiratory
+        system", "respiration", "reproductive system", "reproduction", "renal", "protein",
+        "platelet", "placental hormone", "physiology", "pharynx", "peripheral nervous
+        system", "pelvis", "pectoral girdle", "pathogen", "pancreas", "organic compound",
+        "nutrition", "nucleus", "neuron", "neurological", "nervous system", "muscle",
+        "motor response", "metabolism", "lymphocyte", "lymphatic system", "lung",
+        "liver", "leukocyte", "lactation", "kidney", "joint", "intestine", "integumentary
+        system", "inorganic compound", "inheritance", "immunity", "immune system",
+        "hypothalamus", "hormone", "homeostasis", "hemostasis", "heat balance", "heart",
+        "gland", "gallbladder", "fluid balance", "fetal", "fertilization", "fascicle",
+        "exam", "esophagus", "erythrocyte", "epithelial", "energy", "endocrine", "element",
+        "electrolyte", "electrical activity", "DNA", "digestive system", "digestion",
+        "diet", "development", "cytoplasm", "connective tissue", "circulatory pathway",
+        "chemical", "central nervous system", "cell", "cardiovascular system", "cardiac",
+        "capillary", "bone", "body fluid", "blood", "axial skeleton", "autonomic nervous
+        system", "atom", "appendicular skeleton", "antibody", "anatomy", "adrenal",
+        "action potential", "acid-base balance"], "id": "7c42370b-c3ad-48ac-9620-d15367b882c6",
+        "canonical": "14fb4ad7-39a1-4eee-ab6e-3ef2482e3e22", "title": "Preface", "mediaType":
+        "application/vnd.org.cnx.module", "canon_url": "https://cnx.org/contents/14fb4ad7-39a1-4eee-ab6e-3ef2482e3e22:7c42370b-c3ad-48ac-9620-d15367b882c6/Preface",
+        "content": "<html xmlns=\"http://www.w3.org/1999/xhtml\">\n  <body><div class=\"preface\"
+        data-cnxml-to-html-ver=\"1.3.3\" data-type=\"page\" id=\"7c42370b-c3ad-48ac-9620-d15367b882c6\"><h1
+        data-type=\"document-title\" id=\"19010\"><span class=\"os-text\">Preface</span></h1>\n  \n  <p
+        id=\"delete_me\">Welcome to <em data-effect=\"italics\">Anatomy and Physiology</em>,
+        an OpenStax resource. This textbook was written to increase student access
+        to high-quality learning materials, maintaining highest standards of academic
+        rigor at little to no cost. </p><section data-depth=\"1\" id=\"eip-7\"><h3
+        data-type=\"title\">About OpenStax</h3><p id=\"eip-463\">OpenStax is a nonprofit
+        based at Rice University, and it\u2019s our mission to improve student access
+        to education. Our first openly licensed college textbook was published in
+        2012, and our library has since scaled to over 25 books for college and AP<sup>\u00ae</sup>
+        courses used by hundreds of thousands of students. Our adaptive learning technology,
+        designed to improve learning outcomes through personalized educational paths,
+        is being piloted in college courses throughout the country. Through our partnerships
+        with philanthropic foundations and our alliance with other educational resource
+        organizations, OpenStax is breaking down the most common barriers to learning
+        and empowering students and instructors to succeed.</p></section><section
+        data-depth=\"1\" id=\"eip-374\"><h3 data-type=\"title\">About OpenStax Resources</h3><section
+        data-depth=\"2\" id=\"eip-262\"><h4 data-type=\"title\">Customization</h4><p
+        id=\"eip-362\"><em data-effect=\"italics\">Anatomy and Physiology</em> is
+        licensed under a Creative Commons Attribution 4.0 International (CC BY) license,
+        which means that you can distribute, remix, and build upon the content, as
+        long as you provide attribution to OpenStax and its content contributors.</p><p
+        id=\"eip-id1166206909033\">Because our books are openly licensed, you are
+        free to use the entire book or pick and choose the sections that are most
+        relevant to the needs of your course. Feel free to remix the content by assigning
+        your students certain chapters and sections in your syllabus, in the order
+        that you prefer. You can even provide a direct link in your syllabus to the
+        sections in the web view of your book.</p><p id=\"eip-890\">Instructors also
+        have the option of creating a customized version of their OpenStax book. The
+        custom version can be made available to students in low-cost print or digital
+        form through their campus bookstore. Visit your book page on openstax.org
+        for more information.</p></section><section data-depth=\"2\" id=\"eip-185\"><h4
+        data-type=\"title\">Errata</h4><p id=\"eip-155\">All OpenStax textbooks undergo
+        a rigorous review process. However, like any professional-grade textbook,
+        errors sometimes occur. Since our books are web based, we can make updates
+        periodically when deemed pedagogically necessary. If you have a correction
+        to suggest, submit it through the link on your book page on openstax.org.
+        Subject matter experts review all errata suggestions. OpenStax is committed
+        to remaining transparent about all updates, so you will also find a list of
+        past errata changes on your book page on openstax.org.\n\n</p></section><section
+        data-depth=\"2\" id=\"eip-326\"><h4 data-type=\"title\">Format</h4><p id=\"eip-917\">You
+        can access this textbook for free in web view or PDF through openstax.org,
+        and in low-cost print and iBooks editions.</p></section></section><section
+        data-depth=\"1\" id=\"eip-394\"><h3 data-type=\"title\">About <em data-effect=\"italics\">Anatomy
+        and Physiology</em></h3><section data-depth=\"2\" id=\"eip-29\"><h4 data-type=\"title\">Coverage
+        and Scope</h4><p id=\"eip-369\">The units of our <em data-effect=\"italics\">Anatomy
+        and Physiology</em> textbook adhere to the scope and sequence followed by
+        most two-semester courses nationwide. The development choices for this textbook
+        were made with the guidance of hundreds of faculty who are deeply involved
+        in teaching this course. These choices led to innovations in art, terminology,
+        career orientation, practical applications, and multimedia-based learning,
+        all with a goal of increasing relevance to students. We strove to make the
+        discipline meaningful and memorable to students, so that they can draw from
+        it a working knowledge that will enrich their future studies.\n</p><section
+        data-depth=\"3\" id=\"eip-217\"><h5 data-type=\"title\">Unit 1: Levels of
+        Organization </h5><p id=\"eip-719\">Chapters 1\u20134 provide students with
+        a basic understanding of human anatomy and physiology, including its language,
+        the levels of organization, and the basics of chemistry and cell biology.  These
+        chapters provide a foundation for the further study of the body.  They also
+        focus particularly on how the body\u2019s regions, important chemicals, and
+        cells maintain homeostasis.<span data-type=\"newline\"><br/></span>     \nChapter
+        1 An Introduction to the Human Body<span data-type=\"newline\"><br/></span>\nChapter
+        2 The Chemical Level of Organization<span data-type=\"newline\"><br/></span>\nChapter
+        3 The Cellular Level of Organization<span data-type=\"newline\"><br/></span>\nChapter
+        4 The Tissue Level of Organization<span data-type=\"newline\"><br/></span>\n\n</p></section><section
+        data-depth=\"3\" id=\"eip-146\"><h5 data-type=\"title\">Unit 2: Support and
+        Movement </h5><p id=\"eip-760\">In Chapters 5\u201311, students explore the
+        skin, the largest organ of the body, and examine the body\u2019s skeletal
+        and muscular systems, following a traditional sequence of topics.  This unit
+        is the first to walk students through specific systems of the body, and as
+        it does so, it maintains a focus on homeostasis as well as those diseases
+        and conditions that can disrupt it.<span data-type=\"newline\"><br/></span>  \nChapter
+        5 The Integumentary System<span data-type=\"newline\"><br/></span>\nChapter
+        6 Bone and Skeletal Tissue<span data-type=\"newline\"><br/></span>\nChapter
+        7 The Axial Skeleton<span data-type=\"newline\"><br/></span>\nChapter 8 The
+        Appendicular Skeleton<span data-type=\"newline\"><br/></span>\nChapter 9 Joints<span
+        data-type=\"newline\"><br/></span>\nChapter 10 Muscle Tissue<span data-type=\"newline\"><br/></span>\nChapter
+        11 The Muscular System<span data-type=\"newline\"><br/></span>\n\n</p></section><section
+        data-depth=\"3\" id=\"eip-114\"><h5 data-type=\"title\">Unit 3: Regulation,
+        Integration, and Control</h5><p id=\"eip-595\">Chapters 12\u201317 help students
+        answer questions about nervous and endocrine system control and regulation.
+        In a break with the traditional sequence of topics, the special senses are
+        integrated into the chapter on the somatic nervous system. The chapter on
+        the neurological examination offers students a unique approach to understanding
+        nervous system function using five simple but powerful diagnostic tests. <span
+        data-type=\"newline\"><br/></span>\nChapter 12 Introduction to the Nervous
+        System<span data-type=\"newline\"><br/></span>\nChapter 13 The Anatomy of
+        the Nervous System<span data-type=\"newline\"><br/></span>\nChapter 14 The
+        Somatic Nervous System<span data-type=\"newline\"><br/></span>\nChapter 15
+        The Autonomic Nervous System<span data-type=\"newline\"><br/></span>\nChapter
+        16 The Neurological Exam<span data-type=\"newline\"><br/></span>\nChapter
+        17 The Endocrine System<span data-type=\"newline\"><br/></span>\n\n</p></section><section
+        data-depth=\"3\" id=\"eip-708\"><h5 data-type=\"title\">Unit 4: Fluids and
+        Transport </h5><p id=\"eip-75\">\n\nIn Chapters 18\u201321, students examine
+        the principal means of transport for materials needed to support the human
+        body, regulate its internal environment, and provide protection. <span data-type=\"newline\"><br/></span>\nChapter
+        18 Blood<span data-type=\"newline\"><br/></span>\nChapter 19 The Cardiovascular
+        System: The Heart<span data-type=\"newline\"><br/></span>\nChapter 20 The
+        Cardiovascular System: Blood Vessels and Circulation<span data-type=\"newline\"><br/></span>\nChapter
+        21 The Lymphatic System and Immunity\n\n</p></section><section data-depth=\"3\"
+        id=\"eip-942\"><h5 data-type=\"title\">Unit 5: Energy, Maintenance, and Environmental
+        Exchange</h5><p id=\"eip-965\">In Chapters 22\u201326, students discover the
+        interaction between body systems and the outside environment for the exchange
+        of materials, the capture of energy, the release of waste, and the overall
+        maintenance of the internal systems that regulate the exchange.  The explanations
+        and illustrations are particularly focused on how structure relates to function.   <span
+        data-type=\"newline\"><br/></span>\nChapter 22 The Respiratory System<span
+        data-type=\"newline\"><br/></span>\nChapter 23 The Digestive System<span data-type=\"newline\"><br/></span>\nChapter
+        24 Nutrition and Metabolism<span data-type=\"newline\"><br/></span>\nChapter
+        25 The Urinary System<span data-type=\"newline\"><br/></span>\nChapter 26
+        Fluid, Electrolyte, and Acid\u2013Base Balance<span data-type=\"newline\"><br/></span>\n\n</p></section><section
+        data-depth=\"3\" id=\"eip-314\"><h5 data-type=\"title\">Unit 6: Human Development
+        and the Continuity of Life</h5><p id=\"eip-145\">The closing chapters examine
+        the male and female reproductive systems, describe the process of human development
+        and the different stages of pregnancy, and end with a review of the mechanisms
+        of inheritance. <span data-type=\"newline\"><br/></span> \nChapter 27 The
+        Reproductive System<span data-type=\"newline\"><br/></span>\nChapter 28 Development
+        and Genetic Inheritance<span data-type=\"newline\"><br/></span>\n\n</p></section></section><section
+        data-depth=\"2\" id=\"eip-450\"><h4 data-type=\"title\">Pedagogical Foundation
+        and Features</h4><p id=\"eip-191\"><em data-effect=\"italics\">Anatomy and
+        Physiology</em> is designed to promote scientific literacy. Throughout the
+        text, you will find features that engage the students by taking selected topics
+        a step further. \n</p><ul data-bullet-style=\"none\" id=\"eip-641\"><li><strong>Homeostatic
+        Imbalances</strong> discusses the effects and results of imbalances in the
+        body.</li>\n<li><strong>Disorders</strong> showcases a disorder that is relevant
+        to the body system at hand. This feature may focus on a specific disorder
+        or a set of related disorders.</li>\n<li><strong>Diseases</strong> showcases
+        a disease that is relevant to the body system at hand.</li>\n<li><strong>Aging</strong>
+        explores the effect aging has on a body\u2019s system and specific disorders
+        that manifest over time. </li>\n<li><strong>Career Connections</strong> presents
+        information on the various careers often pursued by allied health students,
+        such as medical technician, medical examiner, and neurophysiologist. Students
+        are introduced to the educational requirements for and day-to-day responsibilities
+        in these careers.</li>\n<li><strong>Everyday Connections</strong> tie anatomical
+        and physiological concepts to emerging issues and discuss these in terms of
+        everyday life. Topics include \u201cAnabolic Steroids\u201d and \u201cThe
+        Effect of Second-Hand Tobacco Smoke.\u201d</li>\n<li><strong>Interactive Links</strong>
+        direct students to online exercises, simulations, animations, and videos to
+        add a fuller context to core content and help improve understanding of the
+        material. Many features include links to the University of Michigan\u2019s
+        interactive WebScopes, which allow students to zoom in on micrographs in the
+        collection. These resources were vetted by reviewers and other subject matter
+        experts to ensure that they are effective and accurate. We strongly urge students
+        to explore these links, whether viewing a video or inputting data into a simulation,
+        to gain the fullest experience and to learn how to search for information
+        independently.  </li></ul></section><section data-depth=\"2\" id=\"eip-72\"><h4
+        data-type=\"title\">Dynamic, Learner-Centered Art</h4><p id=\"eip-287\">\nOur
+        unique approach to visuals is designed to emphasize only the components most
+        important in any given illustration. The art style is particularly aimed at
+        focusing student learning through a powerful blend of traditional depictions
+        and instructional innovations.  \n</p>\n\n<p id=\"eip-id1167703115240\">Much
+        of the art in this book consists of black line illustrations. The strongest
+        line is used to highlight the most important structures, and shading is used
+        to show dimension and shape. Color is used sparingly to highlight and clarify
+        the primary anatomical or functional point of the illustration. This technique
+        is intended to draw students\u2019 attention to the critical learning point
+        in the illustration, without distraction from excessive gradients, shadows,
+        and highlights. Full color is used when the structure or process requires
+        it (for example, muscle diagrams and cardiovascular system illustrations).\n</p>\n\n<span
+        data-alt=\"A color illustration of the pharynx.\" data-type=\"media\" id=\"preface\">  \n<img
+        alt=\"A color illustration of the pharynx.\" data-media-type=\"image/png\"
+        id=\"76941\" src=\"/resources/0a6115f30c3454f984efe85f6cf95470f90841a2\" width=\"300\"/>\n</span>\n\n<p
+        id=\"fs-idm629835024\">By highlighting the most important portions of the
+        illustration, the artwork helps students focus on the most important points
+        without overwhelming them.</p>\n\n\n<section data-depth=\"3\" id=\"eip-817\"><h5
+        data-type=\"title\">Micrographs</h5><p id=\"eip-564\">\nMicrograph magnifications
+        have been calculated based on the objective provided with the image. If a
+        micrograph was recorded at 40\u00d7, and the image was magnified an additional
+        2\u00d7, we calculated the final magnification of the micrograph to be 80\u00d7.\n</p>\n\n<p
+        id=\"eip-id1166209684031\">Please note that, when viewing the textbook electronically,
+        the micrograph magnification provided in the text does not take into account
+        the size and magnification of the screen on your electronic device. There
+        may be some variation.\n\n</p><span data-alt=\"A color illustration of the
+        pharynx.\" data-type=\"media\" id=\"preface2\">\n  <img alt=\"A color illustration
+        of the pharynx.\" data-media-type=\"image/png\" id=\"54191\" src=\"/resources/6bc2f7faad13866af8b01c4e782ee1fcc714be57\"
+        width=\"500\"/>\n</span>\n\n<p id=\"fs-idm231211856\">These glands secrete
+        oils that lubricate and protect the skin. LM \u00d7 400. (Micrograph provided
+        by the Regents of University of Michigan Medical School \u00a9 2012)</p>\n\n</section></section></section><section
+        data-depth=\"1\" id=\"eip-388\"><h3 data-type=\"title\">Additional Resources</h3><section
+        data-depth=\"2\" id=\"eip-idm955815248\"><h4 data-type=\"title\">Student and
+        Instructor Resources</h4>\n<p id=\"eip-idm1471053440\">We\u2019ve compiled
+        additional resources for both students and instructors, including Getting
+        Started Guides, an instructor solution guide, and PowerPoint slides. Instructor
+        resources require a verified instructor account, which you can apply for when
+        you log in or create your account on openstax.org. Take advantage of these
+        resources to supplement your OpenStax book.</p>\n</section>\n\n<section data-depth=\"2\"
+        id=\"eip-idm969713904\"><h4 data-type=\"title\">Partner Resources</h4>\n<p
+        id=\"eip-idm913148880\">OpenStax Partners are our allies in the mission to
+        make high-quality learning materials affordable and accessible to students
+        and instructors everywhere. Their tools integrate seamlessly with our OpenStax
+        titles at a low cost. To access the partner resources for your text, visit
+        your book page on openstax.org.</p>\n</section></section><section data-depth=\"1\"
+        id=\"eip-228\"><h3 data-type=\"title\">About the Authors</h3><section class=\"sr-contrib-auth\"
+        data-depth=\"2\" id=\"eip-396\"><h4 data-type=\"title\">Senior Contributing
+        Authors</h4><p id=\"eip-391\">J. Gordon Betts, Tyler Junior College<span data-type=\"newline\"><br/></span>\nPeter
+        Desaix, University of North Carolina at Chapel Hill<span data-type=\"newline\"><br/></span>\nEddie
+        Johnson, Central Oregon Community College<span data-type=\"newline\"><br/></span>\nJody
+        E. Johnson, Arapahoe Community College<span data-type=\"newline\"><br/></span>\nOksana
+        Korol, Aims Community College<span data-type=\"newline\"><br/></span>\nDean
+        Kruse, Portland Community College<span data-type=\"newline\"><br/></span>\nBrandon
+        Poe, Springfield Technical Community College<span data-type=\"newline\"><br/></span>\nJames
+        A. Wise, Hampton University<span data-type=\"newline\"><br/></span>\nMark
+        Womble, Youngstown State University<span data-type=\"newline\"><br/></span>\nKelly
+        A. Young, California State University, Long Beach</p></section><section data-depth=\"2\"
+        id=\"eip-683\"><h4 data-type=\"title\">Advisor</h4><p id=\"eip-195\">\nRobin
+        J. Heyden\n</p></section><section class=\"contrib-auth\" data-depth=\"2\"
+        id=\"eip-11\"><h4 data-type=\"title\">Contributing Authors</h4><p id=\"eip-491\">Kim
+        Aaronson, Aquarius Institute; Triton College<span data-type=\"newline\"><br/></span>\nLopamudra
+        Agarwal, Augusta Technical College<span data-type=\"newline\"><br/></span>\nGary
+        Allen, Dalhousie University<span data-type=\"newline\"><br/></span>\nRobert
+        Allison, McLennan Community College<span data-type=\"newline\"><br/></span>\nHeather
+        Armbruster, Southern Union State Community College<span data-type=\"newline\"><br/></span>\nTimothy
+        Ballard, University of North Carolina Wilmington<span data-type=\"newline\"><br/></span>\nMatthew
+        Barlow, Eastern New Mexico University<span data-type=\"newline\"><br/></span>\nWilliam
+        Blaker, Furman University<span data-type=\"newline\"><br/></span>\nJulie Bowers,
+        East Tennessee State University<span data-type=\"newline\"><br/></span>\nEmily
+        Bradshaw, Florida Southern College<span data-type=\"newline\"><br/></span>\nNishi
+        Bryska, University of North Carolina, Charlotte<span data-type=\"newline\"><br/></span>\nSusan
+        Caley Opsal, Illinois Valley Community College<span data-type=\"newline\"><br/></span>\nBoyd
+        Campbell, Southwest College of Naturopathic Medicine and Health Sciences<span
+        data-type=\"newline\"><br/></span>\nAnn Caplea, Walsh University<span data-type=\"newline\"><br/></span>\nMarnie
+        Chapman, University of Alaska, Sitka<span data-type=\"newline\"><br/></span>\nBarbara
+        Christie-Pope, Cornell College<span data-type=\"newline\"><br/></span>\nKenneth
+        Crane, Texarkana College<span data-type=\"newline\"><br/></span>\nMaurice
+        Culver, Florida State College at Jacksonville<span data-type=\"newline\"><br/></span>\nHeather
+        Cushman, Tacoma Community College<span data-type=\"newline\"><br/></span>\nNoelle
+        Cutter, Molloy College<span data-type=\"newline\"><br/></span>\nLynnette Danzl-Tauer,
+        Rock Valley College<span data-type=\"newline\"><br/></span>\nJane Davis, Aurora
+        University<span data-type=\"newline\"><br/></span>\nAnnMarie DelliPizzi, Dominican
+        College<span data-type=\"newline\"><br/></span>\nSusan Dentel, Washtenaw Community
+        College<span data-type=\"newline\"><br/></span>\nPamela Dobbins, Shelton State
+        Community College<span data-type=\"newline\"><br/></span>\nPatty Dolan, Pacific
+        Lutheran University<span data-type=\"newline\"><br/></span>\nSondra Dubowsky,
+        McLennan Community College<span data-type=\"newline\"><br/></span>\nPeter
+        Dukehart, Three Rivers Community College<span data-type=\"newline\"><br/></span>\nEllen
+        DuPr\u00e9, Central College<span data-type=\"newline\"><br/></span>\nElizabeth
+        DuPriest, Warner Pacific College<span data-type=\"newline\"><br/></span>\nPam
+        Elf, University of Minnesota<span data-type=\"newline\"><br/></span>\nSharon
+        Ellerton, Queensborough Community College<span data-type=\"newline\"><br/></span>\nCarla
+        Endres, Utah State University - College of Eastern Utah: San Juan Campus<span
+        data-type=\"newline\"><br/></span>\nMyriam Feldman, Lake Washington Institute
+        of Technology; Cascadia Community College<span data-type=\"newline\"><br/></span>\nGreg
+        Fitch, Avila University<span data-type=\"newline\"><br/></span>\nLynn Gargan,
+        Tarant County College<span data-type=\"newline\"><br/></span>\nMichael Giangrande,
+        Oakland Community College<span data-type=\"newline\"><br/></span>\nChaya Gopalan,
+        St. Louis College of Pharmacy<span data-type=\"newline\"><br/></span>\nVictor
+        Greco, Chattahoochee Technical College<span data-type=\"newline\"><br/></span>\nSusanna
+        Heinze, Skagit Valley College<span data-type=\"newline\"><br/></span>\nAnn
+        Henninger, Wartburg College<span data-type=\"newline\"><br/></span>\nDale
+        Horeth, Tidewater Community College<span data-type=\"newline\"><br/></span>\nMichael
+        Hortsch, University of Michigan<span data-type=\"newline\"><br/></span>\nRosemary
+        Hubbard, Marymount University<span data-type=\"newline\"><br/></span>\nMark
+        Hubley, Prince George''s Community College<span data-type=\"newline\"><br/></span>\nBranko
+        Jablanovic, College of Lake County<span data-type=\"newline\"><br/></span>\nNorman
+        Johnson, University of Massachusetts Amherst<span data-type=\"newline\"><br/></span>\nMark
+        Jonasson, North Arkansas College<span data-type=\"newline\"><br/></span>\nJeff
+        Keyte, College of Saint Mary<span data-type=\"newline\"><br/></span>\nWilliam
+        Kleinelp, Middlesex County College<span data-type=\"newline\"><br/></span>\nLeigh
+        Kleinert, Grand Rapids Community College<span data-type=\"newline\"><br/></span>\nBrenda
+        Leady, University of Toledo<span data-type=\"newline\"><br/></span>\nJohn
+        Lepri, University of North Carolina, Greensboro<span data-type=\"newline\"><br/></span>\nSarah
+        Leupen, University of Maryland, Baltimore County<span data-type=\"newline\"><br/></span>\nLihua
+        Liang, Johns Hopkins University<span data-type=\"newline\"><br/></span>\nRobert
+        Mallet, University of North Texas Health Science Center<span data-type=\"newline\"><br/></span>\nBruce
+        Maring, Daytona State College<span data-type=\"newline\"><br/></span>\nElisabeth
+        Martin, College of Lake County<span data-type=\"newline\"><br/></span>\nNatalie
+        Maxwell, Carl Albert State College, Sallisaw<span data-type=\"newline\"><br/></span>\nJulie
+        May, William Carey University<span data-type=\"newline\"><br/></span>\nDebra
+        McLaughlin, University of Maryland University College<span data-type=\"newline\"><br/></span>\nNicholas
+        Mitchell, St. Bonaventure University<span data-type=\"newline\"><br/></span>\nShobhana
+        Natarajan, Brookhaven College<span data-type=\"newline\"><br/></span>\nPhillip
+        Nicotera, St. Petersburg College<span data-type=\"newline\"><br/></span>\nMary
+        Jane Niles, University of San Francisco<span data-type=\"newline\"><br/></span>\nIkemefuna
+        Nwosu, Parkland College; Lake Land College<span data-type=\"newline\"><br/></span>\nBetsy
+        Ott, Tyler Junior College<span data-type=\"newline\"><br/></span>\nIvan Paul,
+        John Wood Community College<span data-type=\"newline\"><br/></span>\nAaron
+        Payette, College of Southern Nevada<span data-type=\"newline\"><br/></span>\nScott
+        Payne, Kentucky Wesleyan College<span data-type=\"newline\"><br/></span>\nCameron
+        Perkins, South Georgia College<span data-type=\"newline\"><br/></span>\nDavid
+        Pfeiffer, University of Alaska, Anchorage<span data-type=\"newline\"><br/></span>\nThomas
+        Pilat, Illinois Central College<span data-type=\"newline\"><br/></span>\nEileen
+        Preston, Tarrant County College<span data-type=\"newline\"><br/></span>\nMike
+        Pyle, Olivet Nazarene University<span data-type=\"newline\"><br/></span>\nRobert
+        Rawding, Gannon University<span data-type=\"newline\"><br/></span>\nJason
+        Schreer, State University of New York at Potsdam<span data-type=\"newline\"><br/></span>\nLaird
+        Sheldahl, Mt. Hood Community College<span data-type=\"newline\"><br/></span>\nBrian
+        Shmaefsky, Lone Star College System<span data-type=\"newline\"><br/></span>\nDouglas
+        Sizemore, Bevill State Community College<span data-type=\"newline\"><br/></span>\nSusan
+        Spencer, Mount Hood Community College<span data-type=\"newline\"><br/></span>\nCynthia
+        Standley, University of Arizona<span data-type=\"newline\"><br/></span>\nRobert
+        Sullivan, Marist College<span data-type=\"newline\"><br/></span>\nEric Sun,
+        Middle Georgia State College<span data-type=\"newline\"><br/></span>\nTom
+        Swenson, Ithaca College<span data-type=\"newline\"><br/></span>\nKathleen
+        Tallman, Azusa Pacific University<span data-type=\"newline\"><br/></span>\nRohinton
+        Tarapore, University of Pennsylvania<span data-type=\"newline\"><br/></span>\nElizabeth
+        Tattersall, Western Nevada College<span data-type=\"newline\"><br/></span>\nMark
+        Thomas, University of Northern Colorado<span data-type=\"newline\"><br/></span>\nJanis
+        Thompson, Lorain County Community College<span data-type=\"newline\"><br/></span>\nRita
+        Thrasher, Pensacola State College<span data-type=\"newline\"><br/></span>\nDavid
+        Van Wylen, St. Olaf College<span data-type=\"newline\"><br/></span>\nLynn
+        Wandrey, Mott Community College<span data-type=\"newline\"><br/></span>\nMargaret
+        Weck, St. Louis College of Pharmacy<span data-type=\"newline\"><br/></span>\nKathleen
+        Weiss, George Fox University<span data-type=\"newline\"><br/></span>\nNeil
+        Westergaard, Williston State College<span data-type=\"newline\"><br/></span>\nDavid
+        Wortham, West Georgia Technical College<span data-type=\"newline\"><br/></span>\nUmesh
+        Yadav, University of Texas Medical Branch<span data-type=\"newline\"><br/></span>\nTony
+        Yates, Oklahoma Baptist University<span data-type=\"newline\"><br/></span>\nJustin
+        York, Glendale Community College<span data-type=\"newline\"><br/></span>\nCheri
+        Zao, North Idaho College<span data-type=\"newline\"><br/></span>\nElena Zoubina,
+        Bridgewater State University; Massasoit Community College<span data-type=\"newline\"><br/></span>\nShobhana
+        Natarajan, Alcon Laboratories, Inc.</p></section></section><section data-depth=\"1\"
+        id=\"eip-321\"><h3 data-type=\"title\">Special Thanks</h3><p id=\"eip-980\">OpenStax
+        wishes to thank the Regents of University of Michigan Medical School for the
+        use of their extensive micrograph collection. Many of the UM micrographs that
+        appear in <em data-effect=\"italics\">Anatomy and Physiology</em> are interactive
+        WebScopes, which students can explore by zooming in and out.\n\n\n</p><p id=\"eip-id1164912162747\">We
+        also wish to thank the Open Learning Initiative at Carnegie Mellon University,
+        with whom we shared and exchanged resources during the development of <em
+        data-effect=\"italics\">Anatomy and Physiology</em>.</p></section>\n  </div></body>\n</html>\n",
+        "subjects": ["Science and Technology"], "legacy_id": "m46844", "parentId":
+        null, "resources": [{"media_type": "image/png", "id": "0a6115f30c3454f984efe85f6cf95470f90841a2",
+        "filename": "Preface.png"}, {"media_type": "text/xml", "id": "5e55580e24b0985205d52a8bbb51af4f92ff6dc0",
+        "filename": "index.cnxml.html"}, {"media_type": "image/png", "id": "6bc2f7faad13866af8b01c4e782ee1fcc714be57",
+        "filename": "Preface2.png"}, {"media_type": "application/octet-stream", "id":
+        "efdd4b52b183a2a47e5dc4a60360d3f6924bd8c1", "filename": "index.cnxml"}], "publishers":
+        [{"surname": "Anatomy and Physiology", "suffix": "", "firstname": "CNX", "title":
+        "", "fullname": "CNX Anatomy and Physiology", "id": "cnxap"}], "parent": {"authors":
+        [], "shortId": null, "version": "", "id": null, "title": null}, "stateid":
+        1, "parentTitle": null, "shortId": "fEI3C8Ot", "authors": [{"surname": "Anatomy
+        and Physiology", "suffix": "", "firstname": "CNX", "title": "", "fullname":
+        "CNX Anatomy and Physiology", "id": "cnxap"}], "parentVersion": "", "legacy_version":
+        "1.19", "licensors": [{"surname": "Anatomy and Physiology", "suffix": "",
+        "firstname": "CNX", "title": "", "fullname": "CNX Anatomy and Physiology",
+        "id": "cnxap"}], "language": "en", "license": {"url": "http://creativecommons.org/licenses/by/4.0/",
+        "code": "by", "version": "4.0", "name": "Creative Commons Attribution License"},
+        "created": "2013-06-17T21:41:12Z", "doctype": "", "buyLink": null, "submitter":
+        {"surname": "Anatomy and Physiology", "suffix": "", "firstname": "CNX", "title":
+        "", "fullname": "CNX Anatomy and Physiology", "id": "cnxap"}, "baked": null,
+        "parentAuthors": [], "history": [{"changes": "removed bullets from list",
+        "version": "19", "revised": "2019-02-07T22:07:05Z", "publisher": {"surname":
+        "Anatomy and Physiology", "suffix": "", "firstname": "CNX", "title": "", "fullname":
+        "CNX Anatomy and Physiology", "id": "cnxap"}}, {"changes": "Removed figure
+        numbering from the 2 images found in Preface and moved their descriptions
+        to paragraphs below the images. ", "version": "18", "revised": "2019-02-05T22:23:32Z",
+        "publisher": {"surname": "Anatomy and Physiology", "suffix": "", "firstname":
+        "CNX", "title": "", "fullname": "CNX Anatomy and Physiology", "id": "cnxap"}},
+        {"changes": "class=\"preface\" ", "version": "17", "revised": "2018-11-01T19:02:34Z",
+        "publisher": {"surname": "Anatomy and Physiology", "suffix": "", "firstname":
+        "CNX", "title": "", "fullname": "CNX Anatomy and Physiology", "id": "cnxap"}},
+        {"changes": "errata 4944, 4975, 4995, 5059, 5061, 5262, 5531", "version":
+        "16", "revised": "2018-10-17T18:45:14Z", "publisher": {"surname": "OpenStax
+        College", "suffix": "", "firstname": "", "title": "", "fullname": "OpenStax",
+        "id": "OpenStaxCollege"}}, {"changes": "remove qr codes", "version": "15",
+        "revised": "2018-10-17T14:34:46Z", "publisher": {"surname": "OpenStax College",
+        "suffix": "", "firstname": "", "title": "", "fullname": "OpenStax", "id":
+        "OpenStaxCollege"}}, {"changes": "Updated shortlinks -MJ", "version": "14",
+        "revised": "2018-07-31T13:34:12Z", "publisher": {"surname": "OpenStax College",
+        "suffix": "", "firstname": "", "title": "", "fullname": "OpenStax", "id":
+        "OpenStaxCollege"}}, {"changes": "customization blurb update", "version":
+        "13", "revised": "2017-06-13T21:47:20Z", "publisher": {"surname": "Anatomy
+        and Physiology", "suffix": "", "firstname": "CNX", "title": "", "fullname":
+        "CNX Anatomy and Physiology", "id": "cnxap"}}, {"changes": "standardize preface",
+        "version": "12", "revised": "2017-04-10T15:55:34Z", "publisher": {"surname":
+        "Anatomy and Physiology", "suffix": "", "firstname": "CNX", "title": "", "fullname":
+        "CNX Anatomy and Physiology", "id": "cnxap"}}, {"changes": "standardized author
+        format", "version": "11", "revised": "2016-10-31T17:45:53Z", "publisher":
+        {"surname": "Anatomy and Physiology", "suffix": "", "firstname": "CNX", "title":
+        "", "fullname": "CNX Anatomy and Physiology", "id": "cnxap"}}, {"changes":
+        "added class=\"preface\" to document tag", "version": "10", "revised": "2016-05-18T16:51:11Z",
+        "publisher": {"surname": "Anatomy and Physiology", "suffix": "", "firstname":
+        "CNX", "title": "", "fullname": "CNX Anatomy and Physiology", "id": "cnxap"}},
+        {"changes": ".", "version": "9", "revised": "2016-02-26T11:58:43Z", "publisher":
+        {"surname": "Anatomy and Physiology", "suffix": "", "firstname": "CNX", "title":
+        "", "fullname": "CNX Anatomy and Physiology", "id": "cnxap"}}, {"changes":
+        "OpenStax College to OpenStax", "version": "8", "revised": "2016-02-25T18:10:43Z",
+        "publisher": {"surname": "Anatomy and Physiology", "suffix": "", "firstname":
+        "CNX", "title": "", "fullname": "CNX Anatomy and Physiology", "id": "cnxap"}},
+        {"changes": "Removed the word \"Human\" from \"Anatomy and Physiology\" title
+        throughout. ", "version": "7", "revised": "2016-02-04T16:06:35Z", "publisher":
+        {"surname": "Anatomy and Physiology", "suffix": "", "firstname": "CNX", "title":
+        "", "fullname": "CNX Anatomy and Physiology", "id": "cnxap"}}, {"changes":
+        "revised unit descriptions (added unit 4)", "version": "6", "revised": "2014-03-03T16:25:22Z",
+        "publisher": {"surname": "Anatomy and Physiology", "suffix": "", "firstname":
+        "CNX", "title": "", "fullname": "CNX Anatomy and Physiology", "id": "cnxap"}},
+        {"changes": "Updated contributors", "version": "5", "revised": "2013-08-07T20:54:41Z",
+        "publisher": {"surname": "Anatomy and Physiology", "suffix": "", "firstname":
+        "CNX", "title": "", "fullname": "CNX Anatomy and Physiology", "id": "cnxap"}},
+        {"changes": "New contributor", "version": "4", "revised": "2013-07-29T20:48:30Z",
+        "publisher": {"surname": "Anatomy and Physiology", "suffix": "", "firstname":
+        "CNX", "title": "", "fullname": "CNX Anatomy and Physiology", "id": "cnxap"}},
+        {"changes": "WN review changes", "version": "3", "revised": "2013-06-27T14:49:54Z",
+        "publisher": {"surname": "Anatomy and Physiology", "suffix": "", "firstname":
+        "CNX", "title": "", "fullname": "CNX Anatomy and Physiology", "id": "cnxap"}},
+        {"changes": "added content, updated metadata", "version": "2", "revised":
+        "2013-06-18T21:22:47Z", "publisher": {"surname": "Anatomy and Physiology",
+        "suffix": "", "firstname": "CNX", "title": "", "fullname": "CNX Anatomy and
+        Physiology", "id": "cnxap"}}, {"changes": "Created module", "version": "1",
+        "revised": "2013-06-17T21:41:39Z", "publisher": {"surname": "Anatomy and Physiology",
+        "suffix": "", "firstname": "CNX", "title": "", "fullname": "CNX Anatomy and
+        Physiology", "id": "cnxap"}}]}'
+    http_version: 
+  recorded_at: Tue, 20 Aug 2019 19:33:26 GMT
+recorded_with: VCR 4.0.0
