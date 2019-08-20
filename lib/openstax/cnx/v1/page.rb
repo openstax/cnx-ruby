@@ -67,6 +67,14 @@ module OpenStax::Cnx::V1
       @is_intro = title.start_with?('Introduction')
     end
 
+    def preface?
+      content_dom.xpath('boolean(//html/body/div[@data-type="page"][@class="preface"])')
+    end
+
+    def index?
+      content_dom.xpath('boolean(//div[contains(@class,"os-index-container")])')
+    end
+
     def full_hash
       @full_hash ||= OpenStax::Cnx::V1.fetch(url)
     end
