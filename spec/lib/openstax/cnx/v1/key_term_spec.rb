@@ -25,7 +25,7 @@ RSpec.describe OpenStax::Cnx::V1::KeyTerm do
 
   describe ".matcher" do
     it "finds the key terms" do
-      expect(key_term_match.count).to eq 2
+      expect(content_dom.xpath(described_class.matcher).count).to eq 2
     end
   end
 
