@@ -174,7 +174,8 @@ module OpenStax::Cnx::V1
     #   e.g.,
     #     element classes = [
     #       OpenStax::Cnx::V1::Figure,
-    #       OpenStax::Cnx::V1::Paragraph
+    #       OpenStax::Cnx::V1::Paragraph,
+    #       OpenStax::Cnx::V1::KeyTerm,
     #     ]
     #
     # you want to retrieve with the page
