@@ -169,6 +169,12 @@ module OpenStax::Cnx::V1
       @tags.values
     end
 
+    def remove_elements(xpath:)
+      content_dom.xpath(xpath).each do | xpath_element |
+        xpath_element.remove
+      end
+    end
+
     # Pass the
     #
     #   e.g.,
