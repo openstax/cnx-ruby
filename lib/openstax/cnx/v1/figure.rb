@@ -3,7 +3,8 @@ module OpenStax::Cnx::V1
     MATCH_FIGURE = "//*[contains(@class, 'os-figure')]"
 
     MATCH_FIGURE_CAPTION = ".//*[contains(@class, 'os-caption')]"
-    MATCH_FIGURE_ALT_TEXT = './/*[@data-alt]'
+    MATCH_FIGURE_ALT_TEXT = './/*[@alt]'
+    MATCH_FIGURE_DATA_ALT_TEXT = './/*[@data-alt]'
     MATCH_FIGURE_ELEM = './/figure'
 
     def initialize(node:)
@@ -11,15 +12,16 @@ module OpenStax::Cnx::V1
     end
 
     def caption
-      node.xpath(MATCH_FIGURE_CAPTION).first.try(:text)
+      node.at_xpath(MATCH_FIGURE_CAPTION).try(:text)
     end
 
     def id
-      node.xpath(MATCH_FIGURE_ELEM).first.attr("id")
+      node.at_xpath(MATCH_FIGURE_ELEM).attr('id')
     end
 
     def alt_text
-      node.xpath(MATCH_FIGURE_ALT_TEXT).first.attr('data-alt')
+      node.at_xpath(MATCH_FIGURE_ALT_TEXT).try(:attr, 'alt') ||
+      node.at_xpath(MATCH_FIGURE_DATA_ALT_TEXT).try(:attr, 'data-alt')
     end
 
     def self.matcher
