@@ -121,7 +121,7 @@ module OpenStax::Cnx::V1
     def fetch(url)
       begin
         OpenStax::Cnx::V1.logger.debug { "Fetching #{url}" }
-        data = JSON.parse open(url, 'ACCEPT' => 'text/json').read
+        data = JSON.parse URI.open(url, 'ACCEPT' => 'text/json').read
         data.delete("history") if configuration.ignore_history
         data
       rescue OpenURI::HTTPError => exception
