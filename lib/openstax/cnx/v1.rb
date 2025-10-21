@@ -129,8 +129,8 @@ module OpenStax::Cnx::V1
       end
     end
 
-    def book(options = {})
-      OpenStax::Cnx::V1::Book.new(options)
+    def book(**options)
+      OpenStax::Cnx::V1::Book.new(**options)
     end
 
   end
